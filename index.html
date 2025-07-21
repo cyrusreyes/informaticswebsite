@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STI & HIV Awareness PH</title>
+  <style>
+    body {
+      font-family: 'Trebuchet MS', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background-color: #6c5ce7;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #5e50fa;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+      z-index: 1000;
+      border-bottom: 1px solid #ccc;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+      cursor: pointer;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: #dcd6ff;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+    footer {
+      background-color: #dfe6e9;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+    .tagline {
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .accordion {
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+      border-radius: 5px;
+      margin-top: 15px;
+    }
+    .accordion:hover {
+      background-color: #0056b3;
+    }
+    .panel {
+      padding: 0 15px;
+      max-height: 0;
+      overflow: hidden;
+      background-color: #f1f1f1;
+      transition: max-height 0.4s ease-out, padding 0.3s ease;
+      border-radius: 0 0 10px 10px;
+      margin-bottom: 10px;
+    }
+    .panel.open {
+      padding: 15px;
+    }
+    .panel img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+    .panel .tagline {
+      font-style: italic;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .watermark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('watermark.jpg'); /* update with correct path */
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 40%;
+  opacity: 0.18;
+  z-index: -1;
+  pointer-events: none;
+}
+.logo-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.logo-container img {
+  width: 200px;
+  height: 150px; /* adjust size as needed */
+  opacity: 0.5; /* optional: slightly transparent */
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="logo-container">
+  <img src="nursing.png" alt="Logo">
+</div>
+ <a href="index.html" class="logo-container">
+    <img src="nursing.png" alt="Logo">
+  </a>
+
+  <div class="watermark"></div>
+  <header>
+    <h1>STI & HIV Awareness Philippines</h1>
+    <p class="tagline">Promoting education, prevention, and compassion for every Filipino</p>
+  </header>
+
+  <nav>
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('stds')">STDs & STIs</a>
+    <a onclick="showSection('hiv')">HIV in the Philippines</a>
+    <a onclick="showSection('about')">About</a>
+  </nav>
+
+  <!-- Home -->
+  <section id="home">
+    <h2>Welcome to STI & HIV Awareness PH</h2>
+    <p>This website provides essential education and resources to raise awareness about STDs and HIV in the Philippines.</p>
+  </section>
+
+  <!-- STDs & STIs -->
+  <section id="stds" style="display: none;">
+   <h2>Common STDs & STIs</h2>
+
+  <div class="accordion-item">
+    <button class="accordion">Chlamydia</button>
+    <div class="panel">
+      <img src="chlamydia.png" alt="Chlamydia Awareness">
+      <p class="tagline">Chlamydia is often silent but can cause long-term harm.</p>
+      <p><strong>Definition:</strong> Chlamydia is a common bacterial sexually transmitted infection (STI) caused by<em> Chlamydia trachomatis.</em> It often goes unnoticed because it can be asymptomatic, especially in women. When left untreated, it can lead to serious health issues such as infertility and pelvic inflammatory disease (PID)..</p>
+      <p><strong>Causes:</strong>  Spread through vaginal, anal, or oral sex; also from mother to baby during childbirth.</p>
+     <p><strong>Signs & Symptoms:</strong> 
+      <ul>
+        <li>Burning sensation during urination</li>
+        <li>Unusual vaginal or penile discharge</li>
+        <li>Pelvic or testicular pain</li>
+        <li>Bleeding between periods (women)</li>
+        <li>Often no symptoms at all</li>
+      </ul>
+    </p>
+      <p><Strong>How to Avoid:</strong>
+	<ul>
+	   <li>Use condoms correctly every time you have sex</li>
+           <li>Get tested regularly, especially if you’re sexually active with new or multiple partners</li>
+           <li>Limit the number of sexual partners</li>
+           <li>Ensure your partners are tested and treated</li>
+           <li>Avoid douching (it can increase the risk in women)</li>
+	</ul>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <button class="accordion">Gonorrhea</button>
+    <div class="panel">
+      <img src="ghonorhea.png" alt="Gonorrhea Awareness">
+      <p class="tagline">Gonorrhea can affect more than just the genitals.</p>
+      <p><strong>Definition:</strong>Gonorrhea is a bacterial STI caused by <em>Neisseria gonorrhoeae.</em> It can infect the genitals, rectum, and throat. Like chlamydia, it often presents no symptoms, particularly in women. If untreated, it may cause infertility or spread to the bloodstream (a life-threatening condition).</p>
+      <p><strong>Causes:</strong> Vaginal, anal, or oral sex with an infected person;Can be transmitted during childbirth.</p>
+      <p><strong>Signs & Symptoms:</strong> 
+      <ul>
+        <li>Pain or burning while urinating</li>
+        <li>Thick, cloudy, or bloody discharge from the penis or vagina</li>
+        <li>Swollen or painful testicles</li>
+        <li>Vaginal bleeding between periods</li>
+        <li>Rectal pain, discharge, or bleeding</li>
+	<li>Sore throat if oral transmission occurred</li>
+      </ul>
+     <p><Strong>How to Avoid:</strong>
+	<ul>
+	   <li>Use latex condoms during all types of sex</li>
+           <li>Regular STI screening and prompt treatment</li>
+           <li>Avoid sexual contact with someone showing symptoms</li>
+           <li>Talk openly with partners about STIs and testing</li>
+        </ul>
+
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <button class="accordion">Syphilis</button>
+    <div class="panel">
+      <img src="syphilis.png" alt="Syphilis Awareness">
+      <p class="tagline">Syphilis can be deadly if left untreated.</p>
+      <p><strong>Definition:</strong> Syphilis is a bacterial infection caused by <em>Treponema pallidum.</em> It progresses in stages (primary, secondary, latent, and tertiary) and can be life-threatening if untreated. It's known as "the great imitator" because its symptoms can resemble many other diseases.</p>
+      <p><strong>Causes:</strong> Direct contact with a syphilitic sore during vaginal, anal, or oral ses. It can also be passed from mother to baby during pregnancy (congenital syphilis)</p>
+      <p><strong>Signs & Symptoms:</strong> 
+      <ul>
+      <dt><strong>Primary stage:</strong></dt>
+        <li>One or more painless sores (chancres) at the infection site</li>
+
+	<dt><strong>Secondary stage:</strong></dt>
+          <li>Skin rashes (especially on palms/soles)</li>
+          <li>Mucous membrane lesions</li>
+          <li>Fever, sore throat, fatigue, swollen glands</li>
+      
+	<dt><strong>Latent Stage:</strong></dt>
+	  <li>No symptoms but infection remains</li>
+	<dt><strong>Tertiary Stage:</strong></dt>
+	  <li>Brain, heart, nerve, liver, and bone damage</li>
+	  <li>Can cause paralysis, blindness, or death</li>
+      </ul>
+         <p><Strong>How to Avoid:</strong>
+	<ul>
+	   <li>Always use condoms or dental dams</li>
+           <li>Regular STI testing, especially for pregnant women</li>
+           <li>Avoid sex with someone who has visible sores or rashes</li>
+           <li>Get early treatment (penicillin effectively cures syphilis in early stages)</li>
+        </ul>
+</div>
+  </div>
+
+  <div class="accordion-item">
+    <button class="accordion">HPV (Human Papillomavirus)</button>
+    <div class="panel">
+      <img src="HPV.png" alt="HPV Awareness">
+      <p class="tagline">HPV is preventable through vaccination.</p>
+      <p><strong>Definition:</strong> HPV is the most common viral STI, with over 100 types. Some strains cause genital warts, while others are linked to cervical, anal, throat, and penile cancers. Most infections go away on their own, but some persist and lead to complications.</p>
+      <p><strong>Causes:</strong> Skin-to-skin sexual contact, even without visible symptoms.</p>
+      <p><strong>Signs & Symptoms:</strong>
+      <ul>
+        <li>Most people have no symptoms</li>
+        <li>Genital warts</li>
+        <li>Abnormal Pap smear results (in women)</li>
+        <li>Rare cases: cancer signs (bleeding, pain)</li>
+      </ul>
+     <p><Strong>How to Avoid:</strong>
+	<ul>
+	   <li>HPV vaccine (Gardasil 9) is highly effective and recommended for both sexes (ages 9–45)</li>
+           <li>Use condoms and dental dams — not 100% protective, but helpful</li>
+           <li>Limit number of sexual partners</li>
+           <li>Get regular Pap smears or HPV tests (for women)</li>
+	   <li>Educate partners about HPV</li>
+        </ul>
+
+	</div>
+  </div>
+
+  <div class="accordion-item">
+    <button class="accordion">Herpes (HSV-1 & HSV-2)</button>
+    <div class="panel">
+      <img src="herpes.png" alt="Herpes Awareness">
+      <p class="tagline">Herpes is manageable—even if it's lifelong.</p>
+      <p><strong>Definition:</strong> A lifelong viral infection caused by the herpes simplex virus (HSV-1 or HSV-2)..</p>
+      <p><strong>Causes:</strong>  Skin-to-skin contact during sex or kissing; passed even when no sores are visible.</p>
+       <p><strong>Signs & Symptoms:</strong>
+      <ul>
+        <li>Painful blisters or sores on the mouth or genitals</li>
+        <li>Itching or burning before outbreaks</li>
+        <li>Flu-like symptoms during first episode</li>
+        <li>Recurrent outbreaks over time</li>
+	</ul>
+	 <p><strong>How to Avoid:</strong> Use condoms, avoid contact during outbreaks, take antiviral meds, and communicate openly with partners.</p>
+    </div>
+  </div>
+</section>
+
+  <!-- HIV Info -->
+  <section id="hiv" style="display: none;">
+    <h2>HIV in the Philippines</h2>
+    <p><strong>HIV</strong> attacks the immune system. If untreated, it leads to AIDS.</p>
+
+    <h3>HIV Statistics in the Philippines</h3>
+    <ul>
+    <li>Over <strong>133,000 confirmed cases</strong> since 1984</li>
+    <li>Average of <strong>50–55 new infections daily</strong> as of 2024</li>
+    <li>Most affected: <strong>25–34 years old</strong>, followed by 15–24 years old</li>
+    <li><strong>94% of cases</strong> are due to sexual contact</li>
+    <li>Top regions: NCR, CALABARZON, and Central Luzon</li>
+  </ul>
+
+    <h3>Causes and Transmission</h3>
+     <p>HIV is transmitted through:</p>
+  <ul>
+    <li>Unprotected sex with an infected person</li>
+    <li>Sharing needles or syringes</li>
+    <li>Contaminated blood transfusion (rare)</li>
+    <li>Mother-to-child transmission during childbirth or breastfeeding</li>
+  </ul>
+  <p>HIV is <strong>not transmitted</strong> by hugging, shaking hands, kissing, sharing utensils, or mosquito bites.</p>
+
+<h3>Signs and Symptoms:</h3>
+  <p><strong>Early Stage:</strong></p>
+  <ul>
+    <li>Fever, rash, sore throat</li>
+    <li>Swollen lymph nodes, fatigue, muscle pain</li>
+  </ul>
+  <p><strong>Chronic Stage:</strong></p>
+  <ul>
+    <li>Weight loss, persistent diarrhea, night sweats</li>
+    <li>Recurring infections</li>
+  </ul>
+  <p><strong>AIDS Stage:</strong></p>
+  <ul>
+    <li>Severe weight loss, pneumonia</li>
+    <li>Skin blotches, memory loss, opportunistic infections</li>
+  </ul>
+
+    <h3>Prevention:</h3>
+   <ul>
+    <li>Use condoms consistently and correctly</li>
+    <li>Get tested regularly for HIV and STIs</li>
+    <li>Avoid sharing needles or syringes</li>
+    <li>Limit number of sexual partners</li>
+    <li>Take PrEP (Pre-Exposure Prophylaxis) if at high risk</li>
+    <li>Prenatal testing and ART for pregnant women</li>
+  </ul>
+    </ul>
+
+    <h3>Treatment:</h3>
+  <p>There is no cure for HIV, but it can be controlled with Antiretroviral Therapy (ART). ART:</p>
+  <ul>
+    <li>Reduces viral load to undetectable levels</li>
+    <li>Allows people to live long and healthy lives</li>
+    <li>Prevents further transmission (U=U: Undetectable = Untransmittable)</li>
+  </ul>
+  <p>ART is available for <strong>free</strong> through DOH-accredited treatment hubs in the Philippines.</p>
+  
+<h2>Where to Get Tested</h2>
+  <ul>
+    <li>Local government health centers</li>
+    <li>DOH-accredited HIV treatment hubs</li>
+    <li>Non-government organizations like <a href="https://www.loveyourself.ph" target="_blank">LoveYourself PH</a> and <a href="https://theredwhistle.com" target="_blank">Red Whistle</a></li>
+    <li>Mobile HIV testing vans in urban areas</li>
+  </ul>
+
+<h2>Break the Stigma</h2>
+  <p>HIV is manageable with the right care. Testing and early treatment save lives. Let’s support compassion, awareness, and access to health services for all.</p>
+
+
+</section>
+
+  <!-- About -->
+  <section id="about" style="display: none;">
+    <h2>About This Project</h2>
+    <p>This website was created by a Filipino nursing student from Our Lady of Fatima University - Quezon City Campus to promote sexual health awareness.</p>
+
+    <h3>Author & Creator</h3>
+    <img src="author.jpg" alt="Photo of Cyrus Reyes" style="max-width: 200px; border-radius: 8px; margin-bottom: 10px;">
+    <ul>
+      <li><strong>Name:</strong> Reyes, Cyrus Joenhathan Manuel B. S.N</li>
+      <li><strong>Email:</strong> <a href="mailto:cbreyes2916qc@student.fatima.edu.ph">cbreyes2916qc@student.fatima.edu.ph</a></li>
+      <li><strong>Contact No.:</strong> 0917-440-7112</li>
+    </ul>
+
+    <h3>Disclaimer</h3>
+    <p>This website is intended for educational purposes only and does not constitute professional medical advice. If you are experiencing any symptoms or have concerns about your sexual health, please consult a licensed healthcare provider or medical professional. Always seek proper diagnosis and treatment from qualified practitioners.</p>
+  </section>
+
+  <footer>
+    <p>&copy; Our Lady of Fatima University - Nursing Department</p>
+  </footer>
+
+  <script>
+    const accordions = document.querySelectorAll(".accordion");
+    accordions.forEach(button => {
+      button.addEventListener("click", () => {
+        const panel = button.nextElementSibling;
+        panel.classList.toggle("open");
+        panel.style.maxHeight = panel.classList.contains("open") ? panel.scrollHeight + "px" : null;
+      });
+    });
+
+    function showSection(id) {
+      document.querySelectorAll("section").forEach(sec => sec.style.display = "none");
+      document.getElementById(id).style.display = "block";
+      window.scrollTo(0, 0);
+    }
+  </script>
+</body>
+</html>
